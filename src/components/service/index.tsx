@@ -91,9 +91,9 @@ function Service() {
           </Fade>
           <div className="mr-[92px]">
             <Fade right>
-              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px]"><img src={Pc} alt="" className="mr-9"/>PC</p>
-              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px]"><img src={Mobile} alt="" className="mr-9"/>MOBILE</p>
-              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px]"><img src={Webgl} alt=""/></p>
+              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px]"><img src={Pc} alt="" className="pr-7"/>PC</p>
+              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px] pl-2"><img src={Mobile} alt="" className="pr-8"/>MOBILE</p>
+              <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[17px] pl-2"><img src={Webgl} alt=""/></p>
             </Fade>
           </div>
         </div>
