@@ -1,11 +1,15 @@
 import React from "react";
+import Service from "@/components/service";
 
 function Home() {
-  const Zoom = require('react-reveal/Zoom');
+  // const Zoom = require('react-reveal/Zoom');
   return (
-    <Zoom>
-      <div>Welcome To Home Page</div>
-    </Zoom>
+    <div>
+      {/* <Zoom>
+        <div>Welcome To Home Page</div>
+      </Zoom> */}
+      <Service/>
+    </div>
   );
 }
 

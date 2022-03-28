@@ -20,3 +20,33 @@
     color: #61dafb;
   }
 }
+
+.border-top-title {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: linear-gradient(89.76deg, #A60000 5.4%, #FF0000 126.87%);
+    height: 8px;
+    width: 49px;
+  }
+}
+
+.border-bottom-title-left, .border-bottom-title-right {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: linear-gradient(89.76deg, #A60000 5.4%, #FF0000 126.87%);
+    height: 8px;
+    width: 158px;
+  }
+}
+
+.border-bottom-title-right {
+  &::after {
+    right: 0;
+  }
+}
