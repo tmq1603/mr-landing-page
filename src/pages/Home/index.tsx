@@ -1,5 +1,6 @@
 import React from "react";
 import Service from "@/components/service";
+import Team from "@/components/team";
 
 function Home() {
   // const Zoom = require('react-reveal/Zoom');
@@ -8,6 +9,7 @@ function Home() {
       {/* <Zoom>
         <div>Welcome To Home Page</div>
       </Zoom> */}
+      <Team/>
       <Service/>
     </div>
   );

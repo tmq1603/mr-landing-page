@@ -50,3 +50,167 @@
     right: 0;
   }
 }
+
+.founder {
+  .ava {
+    padding: 4px;
+    background-image: linear-gradient(133.59deg, #828282 52.2%, rgba(142, 0, 0, 0) 92.08%);
+    border-radius: 50%;
+    transition: all 0.5s;
+    img {
+      -webkit-filter: grayscale(0.5);
+      filter: grayscale(0.5);
+    }
+  }  
+  .title {
+    position: relative;
+    font-size: 36px;
+    color: #E3E3E3;
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      background: linear-gradient(89.76deg, #A60000 5.4%, #FF0000 126.87%);
+      height: 3px;
+      width: 49px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .name {
+    font-size: 28px;
+    color: #969696;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    .ava {
+      background-image: linear-gradient(133.59deg, #9D0000 52.2%, rgba(142, 0, 0, 0) 92.08%);
+      filter: drop-shadow(0px 0px 17px rgba(255, 0, 0, 0.99));
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+    .name {
+      color: #ffffff
+    }
+  }
+}
+
+.member {
+  position: relative;
+  margin-bottom: 44px;
+  .ava {
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    position: relative;
+    background-image: url('./assets/images/team/bg-member.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      bottom: 20px;
+      width: 135px;
+      border: 1px solid transparent;
+      border-radius: 11px;
+      transition: all 0.5s;
+    }
+    img {
+      -webkit-filter: grayscale(0.5);
+      filter: grayscale(0.5);
+    }
+  }  
+  .title {
+    position: absolute;
+    font-size: 23px;
+    background: linear-gradient(96.88deg, #B90000 -1.28%, #710000 93.7%);
+    left: -11px;
+    right: -11px;
+    bottom: 44px;
+    min-height: 44px;
+    color: #CECECE;
+    border-radius: 3px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 27px;
+  }
+  .name {
+    font-size: 23px;
+    color: #CECECE;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    .ava {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        bottom: 20px;
+        width: 135px;
+        background-image: linear-gradient(133.59deg, #9D0000 52.2%, rgba(142, 0, 0, 0) 92.08%);
+        filter: drop-shadow(0px 0px 17px rgba(255, 0, 0, 0.99));
+        border: 1px solid #FF0000;
+        border-radius: 11px;
+      }
+      img {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }
+    }
+    .name {
+      color: #ffffff
+    }
+  }
+}
+
+.bg-smoke {
+  position: relative;
+  &::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url('./assets/images/team/smoke-bg.png');
+  }
+}
+
+.service {
+  .right-side {
+    @media (max-width: 1600px) {
+      position: unset;
+      padding-left: 92px;
+      padding-top: 10px;
+    }
+    .text-top {
+      @media (max-width: 1600px) {
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+    .text-middle {
+      @media (max-width: 1850px) {
+        width: 400px;
+      }
+      @media (max-width: 1600px) {
+        width: 600px;
+      }
+    }
+    .bottom {
+      @media (max-width: 1850px) {
+        margin-left: 100px;
+      }
+      @media (max-width: 1600px) {
+        margin-left: 0;
+      }
+    }
+  }
+}

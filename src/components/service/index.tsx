@@ -10,19 +10,23 @@ import Unity from "@/assets/images/service/unity.png";
 import Webgl from "@/assets/images/service/webgl.png";
 import Pc from "@/assets/images/service/pc.png";
 import Mobile from "@/assets/images/service/mobile.png";
+import MainBg from "@/assets/images/service/main-bg.png";
+import TopBg from "@/assets/images/service/top-bg.png";
 
 function Service() {
   const Fade = require('react-reveal/Fade');
   
   return (
-    <div className="mx-[120px] text-left">
-      <div className="flex">
+    <div className="px-[120px] text-left pt-[40px] overflow-hidden relative mt-[-26px] service" 
+      style={{background: `url(${MainBg})`}}>
+      <img src={TopBg} className="absolute left-0 right-0 top-[-26px] z-10 h-[135px]" />
+      <div>
         <div>
           <div className="flex">
-            <div>
+            <div className="pt-[45px]">
               <Fade left>
                 <div className="flex items-center mb-[129px]">
-                  <span className="text-[94px] mr-4">03</span>
+                  <span className="text-[94px] mr-4" style={{color: 'rgba(142, 142, 142, 0.35)'}}>03</span>
                   <span className="text-[44px] font-bold italic text-[#464646] border-top-title">SERVICES</span>
                 </div>
                 <div className="ml-[92px]">
@@ -53,15 +57,15 @@ function Service() {
             </Fade>
           </p>
         </div>
-        <div className="pt-[120px] w-[1012px]">
+        <div className="pt-[120px] absolute left-[1134px] top-[40px] right-side">
           <Fade right>
-            <p className="text-[24px] font-light text-[#5c5c5c] border-bottom-title-left ml-[-95px] mb-[53px] uppercase">
+            <p className="text-[24px] font-light text-[#5c5c5c] border-bottom-title-left ml-[-95px] mb-[53px] uppercase text-top">
               We’re hungry for making good games
             </p>
-            <p className="text-[23px] text-[#828282] font-light w-[645px] mb-[120px]">
+            <p className="text-[23px] text-[#828282] font-light w-[645px] mb-[120px] text-middle">
               Our team is able to create a complete video game from concept to launch as well as take part in co-productions.
             </p>
-            <div className="ml-[200px]">
+            <div className="ml-[200px] bottom">
               <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[33px]"><img src={MiraiSun} alt="" className="mr-3"/>BLOCKCHAIN</p>
               <p className="flex items-center text-[25px] text-[#828282] font-semibold mb-[33px]"><img src={MiraiSun} alt="" className="mr-3"/>QA</p>
             </div>
