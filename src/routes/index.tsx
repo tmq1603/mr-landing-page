@@ -4,14 +4,14 @@ import Home from '@/pages/Home'
 
 function Routes() {
   return (
-    <div>
+    <>
       <Switch>
         <Route exact path={"/"}>
           <Redirect to="/home" />
         </Route>
         <Route path={'/home'} component={Home} />
       </Switch>
-    </div>
+    </>
   );
 }
 
