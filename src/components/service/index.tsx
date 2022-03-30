@@ -26,7 +26,7 @@ function Service() {
             <div className="pt-[45px]">
               <Fade left>
                 <div className="flex items-center mb-[129px]">
-                  <span className="text-[94px] mr-4" style={{color: 'rgba(142, 142, 142, 0.35)'}}>03</span>
+                  <span className="text-[94px] mr-4 font-glitch" style={{color: 'rgba(142, 142, 142, 0.35)'}}>03</span>
                   <span className="text-[44px] font-bold italic text-[#464646] border-top-title">SERVICES</span>
                 </div>
                 <div className="ml-[92px]">
@@ -57,7 +57,7 @@ function Service() {
             </Fade>
           </p>
         </div>
-        <div className="pt-[120px] absolute left-[1134px] top-[40px] right-side">
+        <div className="pt-[120px] absolute left-[1130px] top-[40px] right-side">
           <Fade right>
             <p className="text-[24px] font-light text-[#5c5c5c] border-bottom-title-left ml-[-95px] mb-[53px] uppercase text-top">
               We’re hungry for making good games

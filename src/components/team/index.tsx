@@ -31,7 +31,7 @@ function Team() {
         style={{background: `url(${Bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className="flex items-start mb-[20px]">
           <Fade top>
-            <span className="text-[94px] mr-4" style={{color: 'rgba(142, 142, 142, 0.35)', lineHeight: '55px'}}>02</span>
+            <span className="text-[94px] mr-4 font-glitch" style={{color: 'rgba(142, 142, 142, 0.35)', lineHeight: '55px'}}>02</span>
             <div className="pt-[10px]">
               <p className="text-[44px] font-bold italic text-white border-top-title">OUR TEAM</p>
               <p className="max-w-[1060px] text-[25px] font-light" style={{lineHeight: '30px'}}> You can&apos;t make great products and services without great people. Mirai studio is committed to hiring, developing, and retaining world class talent. Working in ONE team to push the boundaries of what games can do for players, developers and publishers. We are seek unconventional solutions to unconventional problems.</p>

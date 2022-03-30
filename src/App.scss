@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Glitch;
+  src: url("./assets/fonts/CF-Glitch-City-Regular.ttf") format('opentype');
+}
+
 .App {
   // text-align: center;
+  font-family: 'Roboto', sans-serif;
   
   .App-header {
     background-color: #282c34;
@@ -739,4 +745,8 @@ footer {
       display: inline;
     }
   }
+}
+
+.font-glitch {
+  font-family: Glitch;
 }
