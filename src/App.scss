@@ -7,6 +7,10 @@
   src: url("./assets/fonts/CF-Glitch-City-Regular.ttf") format('opentype');
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .App {
   // text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -855,4 +859,16 @@ footer {
     position: absolute;
     background-image: url('./assets/images/master/pilot.png');
   }
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  30% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 3s;
+  animation-fill-mode: both;
 }

@@ -27,7 +27,6 @@ function Team() {
   return (
     <div className="text-left text-[#828282] relative z-10 mt-[-305px]">
       <img src={TopBg} className="h-[536px]" />
-      <img src={BottomBg} className="h-[135px] mt-[-110px] relative" />
       <div className="px-[120px] pb-[105px] pt-[100px] mt-[-405px] bg-smoke" 
         style={{background: `url(${Bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className="flex items-start mb-[20px]">
@@ -207,6 +206,7 @@ function Team() {
           <p className="text-center text-[40px] italic font-medium">and 40+ team members</p>
         </div>
       </div>
+      <img src={BottomBg} className="h-[135px] mt-[-110px] relative" />
     </div>    
   );
 }
