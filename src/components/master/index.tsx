@@ -1,14 +1,20 @@
 import React from "react";
 import Bg from "@/assets/images/master/bg.png";
-// import Pilot from "@/assets/images/master/pilot.png";
 
-function Master() {
+import Scroll from "@/assets/images/banner/icon-scroll.png"
+
+function Master(
+  {
+    scrollTo
+  }: {
+    scrollTo: (id:string) => void;
+  }) {
   const Fade = require('react-reveal/Fade');
   
   return (
     <div className="text-left text-[#828282] relative z-10">
       <Fade bottom>
-        <div className="px-[120px] pb-[105px] pt-[181px] h-[786px] bg-pilot" 
+        <div className="px-[120px] pb-[105px] pt-[181px] h-[786px] bg-pilot -mt-[200px]" 
           style={{background: `url(${Bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
           <div className="flex items-start mb-[20px]">
             <Fade left>
@@ -31,6 +37,8 @@ function Master() {
           </div>
         </div>
       </Fade>
+      
+      <img src={Scroll} alt=""  className="absolute left-1/2 -top-11 z-10 -translate-x-1/2 cursor-pointer" onClick={() => scrollTo('master')}/>
     </div>    
   );
 }

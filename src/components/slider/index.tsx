@@ -4,10 +4,9 @@ import Character2 from "@/assets/images/banner/character2.png"
 import Character3 from "@/assets/images/banner/character3.png"
 import Character4 from "@/assets/images/banner/character4.png"
 import Mask1 from "@/assets/images/banner/mask1.png"
-import Mask2 from "@/assets/images/banner/mask2.png"
-import Mask3 from "@/assets/images/banner/mask3.png"
-import Mask4 from "@/assets/images/banner/mask4.png"
-import Scroll from "@/assets/images/banner/icon-scroll.png"
+// import Mask2 from "@/assets/images/banner/mask2.png"
+// import Mask3 from "@/assets/images/banner/mask3.png"
+// import Mask4 from "@/assets/images/banner/mask4.png"
 /* eslint-disable react/jsx-key */
 const makeCarousel = require("react-reveal/makeCarousel");
 // const Slide = require("react-reveal/Slide");
@@ -23,17 +22,17 @@ const conf = [
   {
     name: "Fade",
     pic: BannerBg,
-    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character2}/>, <Fade bottom imgParth2={Mask2}/>],
+    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character2}/>, <Fade bottom imgParth2={Mask1}/>],
   },
   {
     name: "Fade",
     pic: BannerBg,
-    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character3}/>, <Fade bottom imgParth2={Mask3}/>],
+    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character3}/>, <Fade bottom imgParth2={Mask1}/>],
   },
   {
     name: "Fade",
     pic: BannerBg,
-    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character4}/>, <Fade bottom imgParth2={Mask4}/>],
+    effects: [<Fade />, <Fade bottom title="We love games and we are making games for the future. Encouraging the new technologies like block-chain and NFT to combine with traditional game's element."/>, <Fade right imgParth1={Character4}/>, <Fade bottom imgParth2={Mask1}/>],
   }, 
 ];
 
@@ -50,12 +49,21 @@ const makeSlide = (name: {} | null | undefined, pic: string, arr: any[],index: {
           console.log(item.props.text)
           return (
             <>
-              <div>
-                <item.type delay={300} key={id} {...item.props}>
+              <div className="title-banner">
+                {/* <item.type delay={300} key={id} {...item.props}>
                   <div className="title-banner">
                     {item.props.title && <p>{item.props.title}</p>}
                   </div>
-                </item.type>
+                </item.type> */}
+                {item.props.title &&
+                  <item.type delay={300} key={id} {...item.props}>
+                    <div className="pt-[10px] flex justify-start items-top">
+                      <span className="text-[94px] mr-4 font-glitch" style={{color: 'rgba(142, 142, 142, 0.35)', lineHeight: '55px'}}>00</span>
+                      {/* <p className="text-[44px] font-bold italic text-white border-top-title">OUR TEAM</p> */}
+                      <p className="max-w-[1060px] text-[25px] font-light border-top-title text-white border-top-title__custom" style={{lineHeight: '30px'}}>{item.props.title}</p>
+                    </div>
+                  </item.type>
+                }
               </div>
               <div>
                 <item.type delay={300} key={id} {...item.props}>
@@ -108,8 +116,8 @@ const Carousel = makeCarousel(CarouselUI);
 export const Slider = () => {
 
   return (
-    <div className="relative">
-      <Carousel  /* config swipe={true} maxTurns={0} defaultWait={1000} */ /*defaultWait: defaults to 5000 - maxTurns: defaults to 5 - swipe: defaults to True*/
+    <>
+      <Carousel  defaultWait={500000}  /* config swipe={true} maxTurns={0} defaultWait={1000} */ /*defaultWait: defaults to 5000 - maxTurns: defaults to 5 - swipe: defaults to True*/
       >
         {conf.map((slide,index) => makeSlide(slide.name, slide.pic, slide.effects,index))}
         {/* <Slide right>
@@ -131,8 +139,7 @@ export const Slider = () => {
         </Fade>
       </Slide> */}
       </Carousel>
-      <img src={Scroll} alt=""  className="absolute left-1/2 bottom-28 z-10 -translate-x-1/2"/>
-    </div>
+    </>
     
   );
 };

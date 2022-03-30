@@ -10,17 +10,37 @@ import GetInTouch from "@/components/get-in-touch";
 import Footer from "@/components/footer"
 
 function Home() {
-  // const Zoom = require('react-reveal/Zoom');
+  const scrollHandler = (id:string) => {
+    console.log(id);
+    const elementID = document.getElementById(id);
+    if(elementID) {
+      elementID.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+    }
+  }
   return (
-    <div className="relative">
-      <Header />
-      <Slider />
-      <Master />
-      <Team/>
-      <Service/>
-      <Products/>
+    <div className="relative wrap">
+      <Header scrollTo = {scrollHandler}/>
+      <Slider/>
+      <section id="master">
+        <Master  scrollTo = {scrollHandler}/>
+      </section>
+      <section id="our-team">
+        <Team/>
+      </section>
+      <section id="service">
+        <Service/>
+      </section>
+      <section id="product">
+        <Products/>
+      </section>
       <Desports/>
-      <GetInTouch/>
+      <section id="contact">
+        <GetInTouch/>
+      </section>
       <Footer/>
     </div>
   );

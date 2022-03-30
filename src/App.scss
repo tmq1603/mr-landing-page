@@ -26,8 +26,11 @@
     color: #61dafb;
   }
 
-  .aaaa {
-    margin-top: 200vh;
+  .wrap {
+    background-image: url(./assets/images/banner/bannerBg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
   }
 
   .header {
@@ -110,7 +113,7 @@
 
   .carousel {
     position: relative;
-    overflow: hidden;
+    overflow-x: clip;
     /*height: 500px;*/
   }
   
@@ -205,11 +208,11 @@
   #bg {
     position: relative;
     background: #fff;
-    overflow: hidden;
+    overflow-x: clip;
     // height: 500px;
     background-size: cover;
     background-repeat:   no-repeat;
-    background-position: center center;
+    background-position: center top;
     height: 100%;
     .container {
       z-index: 2;
@@ -227,14 +230,30 @@
   .character-0 {
     position: absolute;
     right: 0;
-    top: 130px;
+    bottom: -158px;
     z-index: 1;
+    @media(max-width: 1700px){
+      width: 1000px;
+      bottom: -135px;
+    }
+    @media(max-width: 1400px){
+      width: 850px;
+      bottom: -95px;
+    }
   }
   .mask-0 {
     position: absolute;
     right: 75px;
     bottom: -225px;
     z-index: 0;
+    @media(max-width: 1700px){
+      width: 1330px;
+    }
+    @media(max-width: 1400px){
+      width: 1200px;
+      right: 50px;
+      bottom: -200px;
+    }
   }
 
   .character-1 {
@@ -242,12 +261,34 @@
     right: 0;
     bottom: -40px;
     z-index: 1;
+    @media(max-width: 1700px){
+      width: 1000px;
+      right: -25px;
+    }
+    
+    @media(max-width: 1600px){
+      right: -44px;
+    }
+
+    @media(max-width: 1400px){ 
+      width: 850px;
+    }
   }
   .mask-1 {
     position: absolute;
-    right: 0;
+    right: -160px;
     z-index: 0;
-    bottom: -45px;
+    bottom: -465px;
+    @media(max-width: 1700px){
+      width: 1200px;
+      bottom: -380px;
+      right: -102px;
+    }
+    @media(max-width: 1400px){ 
+      width: 950px;
+      bottom: -290px;
+      right: -65px;
+    }
   }
 
   .character-2 {
@@ -255,12 +296,29 @@
     right: 0;
     bottom: -100px;
     z-index: 1;
+    @media(max-width: 1700px){
+      width: 1000px;
+      bottom: -25px;
+    }
+    @media(max-width: 1400px){ 
+      width: 850px;
+    }
   }
   .mask-2 {
     position: absolute;
-    right: 0;
+    right: -160px;
     z-index: 0;
-    bottom: -100px;
+    bottom: -515px;
+    @media(max-width: 1700px){
+      width: 1200px;
+      right: -80px;
+      bottom: -355px;
+    }
+    @media(max-width: 1400px){ 
+      width: 950px;   
+      bottom: -265px;
+      right: -25px;
+    }
   }
 
   .character-3 {
@@ -268,17 +326,35 @@
     right: 0;
     bottom: -100px;
     z-index: 1;
+    @media(max-width: 1700px){
+      width: 1000px;
+      bottom: -55px;
+    }
+    @media(max-width: 1400px){ 
+      width: 850px;
+      bottom: -20px;
+    }
   }
   .mask-3 {
     position: absolute;
-    right: 0;
+    right: -160px;
     z-index: 0;
-    bottom: -100px;
+    bottom: -515px;
+    @media(max-width: 1700px){
+      width: 1200px;
+      right: -125px;
+      bottom: -390px;
+    }
+    @media(max-width: 1400px){ 
+      width: 850px;
+      bottom: -225px;
+      right: 5px;
+    }
   }
 
   .title-banner {
     position: absolute;
-    width: 849px;
+    width: 1000px;
     top:50%;
     transform: translateY(-50%);
     font-family: Roboto;
@@ -290,7 +366,17 @@
     text-align: left;
     left: 121px;
     color: white;
-
+    margin-top: -100px;
+    z-index: 2;
+    @media(max-width: 1700px){
+      width: 800px;
+    }
+    @media(max-width: 1600px){
+      width: 700px;
+    }
+    @media(max-width: 1400px){
+      margin-top: -170px;
+    }
   }
 
   // @keyframes fadeout{
@@ -315,6 +401,12 @@
     background: linear-gradient(89.76deg, #A60000 5.4%, #FF0000 126.87%);
     height: 8px;
     width: 49px;
+  }
+  &__custom {
+    padding-top: 10px;
+    &::before {
+      top: 0;
+    }
   }
 }
 
