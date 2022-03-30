@@ -25,13 +25,14 @@ function Team() {
   const Fade = require('react-reveal/Fade');
   
   return (
-    <div className="text-left text-[#828282] relative z-10">
+    <div className="text-left text-[#828282] relative z-10 mt-[-305px]">
       <img src={TopBg} className="h-[536px]" />
+      <img src={BottomBg} className="h-[135px] mt-[-110px] relative" />
       <div className="px-[120px] pb-[105px] pt-[100px] mt-[-405px] bg-smoke" 
         style={{background: `url(${Bg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
         <div className="flex items-start mb-[20px]">
           <Fade top>
-            <span className="text-[94px] mr-4 font-glitch" style={{color: 'rgba(142, 142, 142, 0.35)', lineHeight: '55px'}}>02</span>
+            <span className="text-[94px] mr-4 font-glitch" style={{color: 'rgba(142, 142, 142, 0.35)', lineHeight: '85px'}}>02</span>
             <div className="pt-[10px]">
               <p className="text-[44px] font-bold italic text-white border-top-title">OUR TEAM</p>
               <p className="max-w-[1060px] text-[25px] font-light" style={{lineHeight: '30px'}}> You can&apos;t make great products and services without great people. Mirai studio is committed to hiring, developing, and retaining world class talent. Working in ONE team to push the boundaries of what games can do for players, developers and publishers. We are seek unconventional solutions to unconventional problems.</p>
@@ -206,7 +207,6 @@ function Team() {
           <p className="text-center text-[40px] italic font-medium">and 40+ team members</p>
         </div>
       </div>
-      <img src={BottomBg} className="h-[135px] mt-[-110px] relative" />
     </div>    
   );
 }

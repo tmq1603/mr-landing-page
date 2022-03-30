@@ -2,6 +2,7 @@ import { Header } from "@/components/common/Header";
 import { Slider } from "@/components/slider";
 import React from "react";
 import Service from "@/components/service";
+import Master from "@/components/master";
 import Team from "@/components/team";
 import Products from "@/components/products"
 import Desports from "@/components/desports";
@@ -14,6 +15,7 @@ function Home() {
     <div className="relative">
       <Header />
       <Slider />
+      <Master />
       <Team/>
       <Service/>
       <Products/>

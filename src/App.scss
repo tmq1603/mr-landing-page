@@ -750,3 +750,17 @@ footer {
 .font-glitch {
   font-family: Glitch;
 }
+
+.bg-pilot {
+  position: relative;
+  &::before {
+    z-index: -1;
+    content: "";
+    bottom: 80px;
+    left: 0;
+    height: 489px;
+    width: 457px;
+    position: absolute;
+    background-image: url('./assets/images/master/pilot.png');
+  }
+}
