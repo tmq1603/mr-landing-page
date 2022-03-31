@@ -22,7 +22,6 @@ function Home() {
   });
 
   const scrollHandler = (id: string) => {
-    console.log(id);
     const elementID = document.getElementById(id);
     if (elementID) {
       elementID.scrollIntoView({

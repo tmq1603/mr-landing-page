@@ -9,7 +9,7 @@ function GetInTouch() {
 
   return (
     <Fade bottom>
-      <div className="get-in-touch h-[900px] w-full px-[120px] pt-[100px] relative top-[-645px]">
+      <div className="get-in-touch h-[900px] w-full px-[120px] pt-[100px] relative mt-[-145px]">
         <div>
           <span className="text-[94px] mr-4 text-[#8e8e8e59] font-glitch">06</span>
           <span className="text-[44px] font-bold italic text-[#D9D9D9] border-top-title border-top-title-left">GET IN TOUCH</span>

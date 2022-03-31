@@ -10,7 +10,7 @@ function Products() {
   const Reveal = require("react-reveal/Reveal");
   return (
     <Fade bottom>
-      <div className="products h-[1166px] pl-[120px] top-[-380px] relative">
+      <div className="products h-[1166px] pl-[120px] mt-[-380px] relative">
         <Fade left>
           <div className="absolute top-[185px]">
             <span className="text-[94px] mr-4 text-[#979797] font-glitch">05</span>

@@ -45,8 +45,6 @@ const makeSlide = (name: {} | null | undefined, pic: string, arr: any[],index: {
     <EffectItem {...locationItem} key={name} fraction={0}>
       <div id="bg" style={{ backgroundImage: `url(${pic})` }}>
         {arr.map((item, id) => {
-          console.log(item.props)
-          console.log(item.props.text)
           return (
             <>
               <div className="title-banner">

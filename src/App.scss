@@ -662,6 +662,44 @@ body {
     top: 40px;
     left: 30px;
   }
+
+  .partners-logo-container {
+    width: 1350px;
+    @media (max-width: 1570px) {
+      padding-left: 100px;
+      width: 1289px;
+    }
+    @media (max-width: 1366px) {
+      padding-left: 0;
+      width: 1289px;
+    }
+
+    .logo-item {
+      width: 350px;
+      height: 120px;
+      margin-right: 80px;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+        transition: 2s;
+
+        &:hover {
+          filter: none;
+          -webkit-filter: grayscale(0%);
+        }
+      }
+    }
+  }
 }
 
 footer {
@@ -754,7 +792,6 @@ footer {
 
 .desports {
   position: relative;
-  top: -500px;
   z-index: 2;
   background: url("./assets/images/desport/desports.png");
   background-repeat: no-repeat;

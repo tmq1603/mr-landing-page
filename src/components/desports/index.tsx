@@ -4,7 +4,7 @@ import ArrowIcon from "@/assets/images/desport/arrow-icon.png";
 
 function Desports() {
   return (
-    <div className="desports h-[913px] pt-[495px] pl-[120px]">
+    <div className="desports h-[913px] pt-[495px] pl-[120px] mt-[-140px]">
       <p className="w-[550px] font-light text-[23px] leading-[30px] text-[#E7E7E7]">
         A new home for E-sport fan and competitors. With built-in blockchain and NFT, we introduce you a whole new Esport experience.
       </p>

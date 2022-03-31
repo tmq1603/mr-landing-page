@@ -47,7 +47,7 @@ function Footer() {
 
   return (
     <Fade bottom>
-      <footer className="h-[206px] bg-[#EAEAEA] px-[120px] mt-[-900px] grid content-center relative z-[4]">
+      <footer className="h-[206px] bg-[#EAEAEA] px-[120px] mt-[-250px] grid content-center relative z-[4]">
         <img src={MiraiLogoFooter} alt=""/>
         <div className="w-[760px] h-[569px] bg-contain form-background-linear">
           <div className="contact-form h-full pt-[40px] px-[55px]">
