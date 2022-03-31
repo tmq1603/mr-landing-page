@@ -47,13 +47,14 @@ function Footer() {
 
   return (
     <Fade bottom>
-      <footer className="h-[206px] bg-[#EAEAEA] px-[120px] mt-[-510px] grid content-center relative z-[4]">
+      <footer className="h-[206px] bg-[#EAEAEA] px-[120px] mt-[-900px] grid content-center relative z-[4]">
         <img src={MiraiLogoFooter} alt=""/>
         <div className="w-[760px] h-[569px] bg-contain form-background-linear">
           <div className="contact-form h-full pt-[40px] px-[55px]">
             <p className="form-title">LEAVE US A MESSAGE</p>
             <div className="mb-[46px]">
-              <input className="w-full border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
+              <input 
+                className="w-full h-[40px] border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
                 type="text" 
                 name="name"
                 placeholder="Name*"
@@ -65,7 +66,8 @@ function Footer() {
             </div>
 
             <div className="mb-[46px]">
-              <input className="w-full border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
+              <input 
+                className="w-full h-[40px] border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
                 type="email" 
                 name="email"
                 placeholder="Email*"
@@ -77,7 +79,8 @@ function Footer() {
             </div>
 
             <div className="mb-[46px]">
-              <textarea className="w-full border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
+              <textarea 
+                className="w-full border-transparent outline-none bg-transparent font-light text-[25px] leading-[30px] text-[#C4C4C4] input-border" 
                 name="message"
                 placeholder="Message*"
                 rows={5}
