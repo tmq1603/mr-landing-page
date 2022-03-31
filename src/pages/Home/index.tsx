@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 import Service from "@/components/service";
 import Master from "@/components/master";
 import Team from "@/components/team";
-import Products from "@/components/products";
+import Partners from "@/components/partners"
+import Products from "@/components/products"
 import Desports from "@/components/desports";
 import GetInTouch from "@/components/get-in-touch";
 import Footer from "@/components/footer";
@@ -54,6 +55,9 @@ function Home() {
           </section>
           <section id="service">
             <Service />
+          </section>
+          <section>
+            <Partners/>
           </section>
           <section id="product">
             <Products />

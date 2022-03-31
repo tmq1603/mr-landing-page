@@ -158,6 +158,14 @@ body {
     margin: 5px 0;
     transition: all 0.3s;
     position: relative;
+    &.simple {
+      width: 14px;
+      height: 14px;
+      &::after {
+        content: none;
+      }
+      margin: 0 5px;
+    }
     &::after {
       content: "";
       display: inline-block;
@@ -178,6 +186,10 @@ body {
       background-color: #ffffff;
       &::after {
         opacity: 1;
+      }
+      &.simple {
+        width: 14px;
+        height: 14px;
       }
     }
   }
@@ -598,8 +610,57 @@ body {
 
 .border-top-title-left {
   &::before {
-    top: 0;
+    top: -5px;
     left: 0;
+  }
+}
+
+.partners {
+  background-image: url("./assets/images/partners/background-main.png");
+  .partners-container {
+    background-image: url("./assets/images/partners/background-smoke.png");
+    background-position: 0px 230px;
+    background-repeat: no-repeat;
+  }
+
+  .video-player {
+    position: relative;
+    background-image: url("./assets/images/partners/video-player-dock.png");
+    background-repeat: no-repeat;
+    width: 444px;
+    height: 283px;
+    display: inline-block;
+    margin-top: -70px;
+    &:first-child {
+      margin-left: 340px;
+      margin-right: 300px;
+    }
+    @media (max-width: 1863px) {
+      &:first-child {
+        margin-left: 340px;
+        margin-right: 200px;
+      }
+    }
+    @media (max-width: 1770px) {
+      &:first-child {
+        margin-left: 340px;
+        margin-right: 120px;
+      }
+    }
+    @media (max-width: 1700px) {
+      margin-top: 0;
+    }
+    @media (max-width: 1365px) {
+      &:first-child {
+        margin-left: 340px;
+        margin-right: 50px;
+      }
+    }
+  }
+  .video-player-container {
+    position: absolute;
+    top: 40px;
+    left: 30px;
   }
 }
 
@@ -693,7 +754,7 @@ footer {
 
 .desports {
   position: relative;
-  top: -115px;
+  top: -500px;
   z-index: 2;
   background: url("./assets/images/desport/desports.png");
   background-repeat: no-repeat;
@@ -737,9 +798,23 @@ footer {
   }
 }
 
+@keyframes zoomIn {
+  0% {
+    transform: scale(5, 5);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+
 .products {
   background-image: url("./assets/images/products/background-2.png"), url("./assets/images/products/background-1.png");
-  background-position: 0px 105px, 0px -100px;
+  background-position: 0px 105px, 0px -55px;
   background-repeat: no-repeat, no-repeat;
   z-index: 1;
 
